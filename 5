@@ -1,0 +1,21 @@
+clear
+clc
+a = input('정수 a를 입력하세요: ');
+b = input('정수 b를 입력하세요: ');
+cmd = input('문자열 cmd를 입력하세요: ', 's');
+switch cmd
+    case 'add'
+        disp(a+b)
+    case 'sub'
+        disp(a-b)
+    case 'mul'
+        disp(a*b)
+    case 'div'
+        if b==0
+           disp('division by zero')
+        else
+           disp(a/b)
+        end
+    otherwise
+        disp('invalid command')
+end
