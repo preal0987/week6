@@ -1,0 +1,12 @@
+clear
+clc
+N = input('양의 정수 N을 입력하세요: ');
+a = zeros(1, N);
+for i = 1:N
+   if rem(i,2)==0
+      a(i) = i^3;
+   else
+      a(i) = i^2;
+   end
+end
+disp(a)
